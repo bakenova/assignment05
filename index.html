@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>CalculateQalynMal</title>
+</head>
+
+<body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Qalyn calculator</h1>
+                <h3 class="calculator__subtitle">Bride's/Groom's education</h3>
+                <select class="education">
+          <option value="blank"></option>
+          <option class="edu_option">Bachelor degree</option>
+          <option class="edu_option">College degree</option>
+          <option class="edu_option">High school degree</option>
+          <option class="edu_option">Middle school degree</option>
+        </select>
+
+                <h3 class="calculator__subtitle">Bride's/Groom's family net worth</h3>
+                <select class="fnet">
+                    <option value="blank"></option>
+          <option class="fam_option">More than 100,000$</option>
+          <option class="fam_option">Between 50,000$ and 100,000$</option>
+          <option class="fam_option">Less than 50,000$</option>
+        </select>
+
+                <h3 class="calculator__subtitle">Bride's/Groom's skills</h3>
+                <label for="skill1">
+        <input type="checkbox" id ="skill1" value="100">
+        <span class="checkmark"></span>
+        Playing on dombra
+      </label>
+
+                <br>
+
+                <label for="skill2">
+        <input type="checkbox" id ="skill2" value="200">
+        <span class="checkmark"></span>
+        Good cook
+      </label>
+
+                <br>
+
+                <label for="skill3">
+        <input type="checkbox" id ="skill3" value="150">
+        <span class="checkmark"></span>
+        Easygoing character
+      </label>
+
+                <br>
+
+                <label for="skill4">
+        <input type="checkbox" id ="skill4" value="100">
+        <span class="checkmark"></span>
+        Sings well
+      </label>
+
+                <br>
+                <h3 class="calculator__subtitle">Bride's/Groom's age</h3>
+                <div>
+                    <form action="" id="age" onsubmit="return false;">
+                        <div class="cont_order">
+                            <label for="" class="radiolabel">
+                    <input type="radio" name="vozrast" value="18"> Between 18-23 
+                </label> <br>
+                            <label for="" class="radiolabel">
+                    <input type="radio" name="vozrast" value="24" > Between 24-27
+                </label> <br>
+                            <label for="" class="radiolabel">
+                    <input type="radio" name="vozrast" value="28" > 28+
+                </label>
+                        </div>
+                </div>
+
+                <h3 class="calculator__subtitle">Bride's/Groom's reputation</h3>
+                <div>
+                    <input type="checkbox" class="gossips"> Gossips about his/her parent's attitude
+                    <br>
+
+                    <input type="checkbox" class="gossips"> Gossips about his/her character
+                    <br>
+                    <input type="checkbox" class="gossips"> General gossips around his/her person
+                    <br>
+                </div>
+
+                <br>
+                <button id="submit" type="button" class="btn btn-primary">Calculate Price</button>
+
+                <div class="calculator">
+                    <h2 class="calculator__title">Price:</h2>
+                    <h3 class="qprice">$___</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
